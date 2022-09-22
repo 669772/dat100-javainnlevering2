@@ -28,17 +28,17 @@ public class Tabeller {
 	public static int summer(int[] tabell) {
 		int sum = 0;
 		
-		//for(int i = 0; i < tabell.length; i++) {
-			//sum += tabell[i];
-		//}
-		//return sum;
+		/*for(int i = 0; i < tabell.length; i++) {
+			sum += tabell[i];
+		}
+		return sum;
 		
-		//int j = 0;
-		//while (j < tabell.length) {
-			//sum += tabell[j];
-			//j++;
-		//}
-		//return sum;
+		int j = 0;
+		while (j < tabell.length) {
+			sum += tabell[j];
+			j++;
+		}
+		return sum; */
 		
 		for(int k : tabell) {
 			sum += k;
