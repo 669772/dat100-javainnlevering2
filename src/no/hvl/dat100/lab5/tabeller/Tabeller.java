@@ -1,28 +1,49 @@
 package no.hvl.dat100.lab5.tabeller;
 
+import java.util.Arrays;
+
 public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		for (int i : tabell) {
+			System.out.print(i + " ");
+		}
 
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+		StringBuffer sb = new StringBuffer();
+		for(int i = 0; i < tabell.length; i++) {
+			sb.append(tabell[i]+",");
+		}
+		String str = sb.toString();
+		str = str.replaceFirst(".$","");
+		String nytab = ("["+str+"]");
+		return nytab;
 	}
 
 	// c)
 	public static int summer(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("summer ikke implementert");
+		int sum = 0;
+		
+		//for(int i = 0; i < tabell.length; i++) {
+			//sum += tabell[i];
+		//}
+		//return sum;
+		
+		//int j = 0;
+		//while (j < tabell.length) {
+			//sum += tabell[j];
+			//j++;
+		//}
+		//return sum;
+		
+		for(int k : tabell) {
+			sum += k;
+		}
+		return sum;
 	}
 
 	// d)
