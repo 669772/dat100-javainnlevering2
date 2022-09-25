@@ -102,8 +102,18 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		int tab1 = tabell1.length;
+		int tab2 = tabell2.length;
+		int[] nytab = new int[tab1 + tab2];
+		int pos = 0;
+		for (int element : tabell1) {
+			nytab[pos] = element;
+			pos++;
+		}
+		for (int element : tabell2) {
+			nytab[pos] = element;
+			pos++;
+		}
+		return nytab;
 	}
 }
