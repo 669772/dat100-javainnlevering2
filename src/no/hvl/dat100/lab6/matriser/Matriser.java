@@ -82,11 +82,11 @@ public class Matriser {
 		
 		int a = 0;
 		
-		for (int i = 0; i < matrise.length; i++ ) {
+		for (int i = 0; i < matrise[0].length; i++ ) {
 			
 			int i2 = 0;
 
-			for (int y = 0; y < matrise[0].length; y++  ) {
+			for (int y = 0; y < matrise.length; y++  ) {
 				nymat[a][i2] = matrise[y][i] ;
 
 				i2++;
